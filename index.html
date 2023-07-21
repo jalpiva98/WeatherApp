@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather Dashboard</title>
+  <!--  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  
+</head>
+<body>
+  <header class="bg-dark text-white py-4">
+    <h1 class="text-center">Weather Dashboard</h1>
+  </header>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="search-panel py-4">
+          <input type="text" id="cityInput" class="form-control" placeholder="Enter a city">
+          <button onclick="getWeather()" class="btn btn-primary mt-2">Get Weather</button>
+          <div class="history-panel py-2">
+            <h2>Search History</h2>
+            <ul id="historyList" class="list-group"></ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="weather-panel">
+          <h2 id="location" class="mb-4"></h2>
+          <div id="weatherData"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
